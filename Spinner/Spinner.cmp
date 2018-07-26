@@ -1,0 +1,23 @@
+<aura:component>
+    <aura:attribute name="backgroundColor" type="String" default="rgba(255,255,255,.75)" />
+    <aura:attribute name="variant" type="String" default="base" />
+    <aura:attribute name="size" type="String" default="medium" />
+    <aura:attribute name="alternativeText" type="String" default="Loading" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="class" type="String" />
+
+    <div class="{!v.class}" style="{!'background-color:' + v.backgroundColor}">
+        <div class="content">
+            <div class="{!'icon icon_' + v.size}" title="{!v.title}">
+                <div role="status" class="{!'slds-spinner slds-spinner_' + v.size + ' slds-spinner_' + v.variant}">
+                    <span class="slds-assistive-text">{!v.alternativeText}</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+            <div class="slds-m-top_x-small">
+                {!v.body}
+            </div>
+        </div>
+    </div>
+</aura:component>
