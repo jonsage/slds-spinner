@@ -1,0 +1,36 @@
+.THIS {
+    position:absolute;
+    display:flex;
+    bottom:0;
+    right:0;
+    left:0;
+    top:0;
+}
+
+.THIS .content {
+    margin:auto;
+}
+
+.THIS .icon,
+.THIS .icon_medium {
+    position:relative;
+    display:block;
+    margin:0 auto;
+    height:4rem;
+    width:4rem;
+}
+
+.THIS .icon_x-small {
+    height:2rem;
+    width:2rem;
+}
+
+.THIS .icon_small {
+    height:2.5rem;
+    width:2.5rem;
+}
+
+.THIS .icon_large {
+    height:5.5rem;
+    width:5.5rem;
+}
